@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RADAR TRIBUTÁRIO, FISCAL E TRABALHISTA — 16/11/2026</title>
+  <style>
+    :root {
+      --bg: #F4F1EA;
+      --card: #FFFFFF;
+      --border: #E2DDD5;
+      --navy: #0F172A;
+      --wine: #7F1D1D;
+      --amber: #D97706;
+      --text: #1E293B;
+      --muted: #475569;
+      --soft: #F8FAFC;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.55;
+      padding: 28px 18px 42px;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    /* Cabeçalho */
+    .masthead {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--navy);
+      padding: 24px 28px 20px;
+      margin-bottom: 16px;
+    }
+
+    .masthead-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .masthead h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+
+    .masthead-sub {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Faixa de prazos */
+    .deadlines-bar {
+      background: var(--navy);
+      color: #F8FAFC;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 22px;
+      font-size: 13px;
+    }
+
+    .deadlines-label {
+      background: var(--amber);
+      color: #111827;
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    .deadline-item strong {
+      color: #FDE68A;
+    }
+
+    /* Hero */
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--wine);
+      padding: 24px 28px;
+      margin-bottom: 22px;
+    }
+
+    .hero-kicker {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--wine);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 24px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 8px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-vigor {
+      background: #DCFCE7;
+      color: #166534;
+      border: 1px solid #BBF7D0;
+    }
+
+    .badge-mp {
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+
+    .badge-pl {
+      background: #E0F2FE;
+      color: #075985;
+      border: 1px solid #BAE6FD;
+    }
+
+    .badge-judicial {
+      background: #FEE2E2;
+      color: var(--wine);
+      border: 1px solid #FECACA;
+    }
+
+    /* Impact Box */
+    .impact-box {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-left: 4px solid var(--amber);
+      padding: 10px 14px;
+      margin-top: 10px;
+      font-size: 13.5px;
+    }
+
+    .impact-box-title {
+      font-weight: 700;
+      color: #92400E;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 3px;
+    }
+
+    /* Grid 2 colunas */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .pillar-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pillar-header {
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 8px;
+    }
+
+    .pillar-num {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--wine);
+    }
+
+    .pillar-header h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.25;
+      margin-top: 2px;
+    }
+
+    .item {
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .item-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .item p, .item ul {
+      font-size: 13.5px;
+      color: var(--text);
+    }
+
+    .item ul {
+      padding-left: 18px;
+      margin-top: 4px;
+    }
+
+    .item li {
+      margin-bottom: 3px;
+    }
+
+    /* Rodapé Checklist */
+    .checklist-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--navy);
+      padding: 22px 26px;
+    }
+
+    .checklist-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 22px;
+      font-size: 13.5px;
+      list-style: none;
+    }
+
+    .checklist-grid li {
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .checklist-grid li::before {
+      content: "▪";
+      color: var(--wine);
+      font-weight: 700;
+      position: absolute;
+      left: 4px;
+    }
+
+    .footer-meta {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 780px) {
+      .grid, .checklist-grid {
+        grid-template-columns: 1fr;
+      }
+      .masthead h1 {
+        font-size: 24px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #FFFFFF;
+        padding: 0;
+      }
+      .pillar-card, .hero, .checklist-card, .masthead {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="masthead">
+      <div class="masthead-top">
+        <span>Edição Diária • 16 de Novembro de 2026</span>
+        <span>Fontes: RFB • DOU • MTE • STF/TST • CONFAZ</span>
+      </div>
+      <h1>RADAR TRIBUTÁRIO, FISCAL E TRABALHISTA</h1>
+      <p class="masthead-sub">Monitoramento regulatório executivo para indústria, comércio, serviços e pessoa física.</p>
+    </header>
+
+    <div class="deadlines-bar">
+      <span class="deadlines-label">Prazos Próximos</span>
+      <span class="deadline-item"><strong>16/11 (Hoje):</strong> EFD-Contribuições, EFD-Reinf e GPS</span>
+      <span class="deadline-item"><strong>19/11:</strong> Folha/INSS, CPRB, IRRF e Simples Doméstico</span>
+      <span class="deadline-item"><strong>20/11:</strong> DIRBI</span>
+      <span class="deadline-item"><strong>23/11:</strong> PGDAS-D (Simples)</span>
+      <span class="deadline-item"><strong>30/11:</strong> DCTFWeb, IRPJ/CSLL e Carnê-Leão</span>
+    </div>
+
+    <section class="hero">
+      <div class="hero-kicker">
+        <span>Manchete Principal</span>
+        <span class="badge badge-vigor">[EM VIGOR]</span>
+      </div>
+      <h2>Ato Conjunto RFB/CGIBS nº 7/2026 redefine cronograma de documentos fiscais para IBS e CBS</h2>
+      <p>Publicado no Diário Oficial da União em 13/11/2026, o ato escalona a obrigatoriedade dos novos documentos fiscais eletrônicos integrados à Reforma Tributária do Consumo. Os eventos periódicos mensais passam a ter primeira entrega em <strong>15/12/2026</strong> (para regimes próprios, ref. nov/2026) e <strong>15/02/2027</strong> para os demais grupos (ref. jan/2027). Serviços em geral, locações, condomínios, NFGas e NFAg entram em <strong>01/01/2027</strong>; plataformas digitais, software/hospedagem, transporte coletivo e NF-e ABI passam para <strong>01/03/2027</strong>.</p>
+      <div class="impact-box">
+        <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+        Dá fôlego adicional até março de 2027 para empresas de tecnologia, plataformas digitais e transporte adaptarem seus ERPs e emissores de notas sem risco de autuação imediata, preservando o cronograma de transição do Simples Nacional em janeiro e março de 2027.
+      </div>
+    </section>
+
+    <div class="grid">
+      <!-- Pilar 1 -->
+      <article class="pillar-card">
+        <div class="pillar-header">
+          <div class="pillar-num">Pilar 1</div>
+          <h3>Tributos sobre Produtos, Serviços e Empresas</h3>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Imposto Seletivo (IS) na indústria — MP nº 1.399/2026 <span class="badge badge-mp">[MEDIDA PROVISÓRIA]</span></div>
+          <p>Publicada em 04/11/2026 e com cobrança prevista a partir de 02/02/2027, define alíquotas de transição para veículos, aeronaves, embarcações, cigarros, bebidas alcoólicas/açucaradas, minerais e petróleo.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Diferente do IBS/CBS, o IS <strong>não gera crédito tributário</strong> nas etapas seguintes (B2B). Indústrias afetadas devem recalcular preço de venda e margem líquida antes da virada de fevereiro.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">ICMS-ST e Combustíveis — CONFAZ e Ato COTEPE/PMPF nº 30/2026 <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Entra em vigor hoje (<strong>16/11/2026</strong>) a atualização do PMPF (base de cálculo do ICMS sobre combustíveis). No âmbito do CONFAZ, segue a revisão de protocolos de ICMS-ST, incluindo as novas regras de bebidas para Alagoas (Protocolo ICMS nº 120/2026, vigente desde 01/11).</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Distribuidoras, postos e indústrias de bebidas devem validar hoje os parâmetros de CEST e PMPF no faturamento para evitar retenção a menor ou glosa interestadual.
+          </div>
+        </div>
+      </article>
+
+      <!-- Pilar 2 -->
+      <article class="pillar-card">
+        <div class="pillar-header">
+          <div class="pillar-num">Pilar 2</div>
+          <h3>Obrigações Acessórias &amp; Receita Federal</h3>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Vencimentos críticos de hoje (16/11) — ADE CORAT nº 85/2026 <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>A Agenda Tributária de novembro concentra hoje o prazo final para entrega da <strong>EFD-Contribuições</strong>, da <strong>EFD-Reinf</strong> e recolhimento da GPS/CPSS. Na sequência vêm folha/IRRF (19/11), DIRBI (20/11), PGDAS-D (23/11) e DCTFWeb (30/11).</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Atrasos na EFD-Reinf ou EFD-Contribuições geram multas automáticas e travam a emissão de CND (Certidão Negativa de Débitos), bloqueando financiamentos e licitações.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Programa Nacional de Conformidade Tributária (PNCT) <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Receita Federal detalhou a diretriz de assistência preventiva e redução de penalidades por dúvidas fundamentadas durante a adaptação técnica à Reforma Tributária (ano-teste 2026).</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Reduz o risco de multa punitiva por erros involuntários de parametrização na fase de testes, desde que a empresa mantenha os envios regulares.
+          </div>
+        </div>
+      </article>
+
+      <!-- Pilar 3 -->
+      <article class="pillar-card">
+        <div class="pillar-header">
+          <div class="pillar-num">Pilar 3</div>
+          <h3>Normas Trabalhistas (CLT) &amp; Previdenciárias</h3>
+        </div>
+
+        <div class="item">
+          <div class="item-title">STF mantém transição da nova jornada (EC nº 141/2026) <span class="badge badge-judicial">[DECISÃO JUDICIAL]</span></div>
+          <p>Após audiências de conciliação em ADIs da CNI e CNC, o STF manteve o início da transição em <strong>16/12/2026</strong>, rumo à jornada semanal máxima de 42 horas e dois repousos semanais remunerados, com debate sobre janela de 90 dias para negociação coletiva sem redução salarial.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Comércio, serviços e indústria em turnos precisam simular escalas e custos de hora extra antes de 16/12 e alinhar aditivos com sindicatos.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">FGTS Digital em processos trabalhistas e fiscalização MTE <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Recolhimentos de FGTS oriundos de acordos e sentenças trabalhistas seguem obrigatórios no FGTS Digital (via eventos S-2500 e S-5503 do eSocial). MTE também reforçou balanços de auditoria contra assédio eleitoral e condutas discriminatórias.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Jurídico e DP devem gerar guias exclusivamente pelo FGTS Digital para acordos recentes, evitando pagamentos em duplicidade ou em guias antigas (GFIP 660).
+          </div>
+        </div>
+      </article>
+
+      <!-- Pilar 4 -->
+      <article class="pillar-card">
+        <div class="pillar-header">
+          <div class="pillar-num">Pilar 4</div>
+          <h3>Imposto de Renda &amp; Tributação da Pessoa Física</h3>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Obrigações e quotas da PF em 30/11/2026 <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Vencem em <strong>30/11</strong> as quotas aplicáveis do IRPF e ITR, o recolhimento mensal do <strong>Carnê-Leão</strong> e <strong>Ganho de Capital</strong>, além das entregas de <strong>DME</strong> (moeda em espécie), <strong>DOI</strong> (operações imobiliárias) e <strong>DeCripto</strong> (criptoativos) referentes a outubro/2026.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Investidores em criptoativos e pessoas físicas com recebimentos do exterior ou aluguéis devem fechar a apuração de outubro ainda nesta quinzena para evitar multa de mora (0,33% ao dia) e juros Selic.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Planejamento do ano-calendário 2026 para o IRPF 2027 <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Sem alterações normativas nas últimas 24h na tabela progressiva vigente; rendimentos auferidos ao longo de 2026 seguem as faixas atuais para a declaração de 2027.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Bom momento para revisar deduções legais (previdência PGBL, despesas médicas e dependentes) antes do encerramento do exercício fiscal em 31/12.
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="checklist-card">
+      <h3>Checklist do Contador &amp; RH — Ações para Hoje (16/11/2026)</h3>
+      <ul class="checklist-grid">
+        <li>Transmitir <strong>EFD-Contribuições</strong> e <strong>EFD-Reinf</strong> e confirmar pagamento da GPS até o fim do expediente de hoje.</li>
+        <li>Validar atualização do <strong>PMPF</strong> (Ato COTEPE nº 30/2026) e tabelas de <strong>ICMS-ST / CEST</strong> no ERP antes de faturar.</li>
+        <li>Rever cronograma interno de TI/ERP com base no <strong>Ato Conjunto RFB/CGIBS nº 7/2026</strong> (datas de 15/12, 01/01 e 01/03).</li>
+        <li>Iniciar simulação de escalas e custos trabalhistas para a transição da <strong>EC nº 141/2026</strong> (marco em 16/12/2026).</li>
+        <li>Conferir se acordos trabalhistas recentes estão sendo declarados no eSocial (S-2500) para guia no <strong>FGTS Digital</strong>.</li>
+        <li>Separar comprovantes de Carnê-Leão, Ganho de Capital e movimentações de criptoativos (DeCripto) para o fechamento de 30/11.</li>
+      </ul>
+    </section>
+
+    <p class="footer-meta">RADAR TRIBUTÁRIO, FISCAL E TRABALHISTA • Edição 16/11/2026 • Documento informativo — valide a aplicação específica com sua contabilidade.</p>
+  </div>
+</body>
+</html>
