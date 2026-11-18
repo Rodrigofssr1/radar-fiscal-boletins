@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RADAR TRIBUTÁRIO, FISCAL E TRABALHISTA — 17/11/2026</title>
+  <style>
+    :root {
+      --bg: #F4F1EA;
+      --card: #FFFFFF;
+      --border: #E2DDD5;
+      --navy: #0F172A;
+      --wine: #7F1D1D;
+      --amber: #D97706;
+      --text: #1E293B;
+      --muted: #475569;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.55;
+      padding: 28px 18px 42px;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .masthead {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--navy);
+      padding: 24px 28px 20px;
+      margin-bottom: 16px;
+    }
+
+    .masthead-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .masthead h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+
+    .masthead-sub {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .deadlines-bar {
+      background: var(--navy);
+      color: #F8FAFC;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 22px;
+      font-size: 13px;
+    }
+
+    .deadlines-label {
+      background: var(--amber);
+      color: #111827;
+      font-weight: 700;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    .deadline-item strong {
+      color: #FDE68A;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--wine);
+      padding: 24px 28px;
+      margin-bottom: 22px;
+    }
+
+    .hero-kicker {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--wine);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 24px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 2px 8px;
+      border-radius: 3px;
+      vertical-align: middle;
+    }
+
+    .badge-vigor {
+      background: #DCFCE7;
+      color: #166534;
+      border: 1px solid #BBF7D0;
+    }
+
+    .badge-mp {
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+    }
+
+    .badge-pl {
+      background: #E0F2FE;
+      color: #075985;
+      border: 1px solid #BAE6FD;
+    }
+
+    .badge-judicial {
+      background: #FEE2E2;
+      color: var(--wine);
+      border: 1px solid #FECACA;
+    }
+
+    .impact-box {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-left: 4px solid var(--amber);
+      padding: 10px 14px;
+      margin-top: 10px;
+      font-size: 13.5px;
+    }
+
+    .impact-box-title {
+      font-weight: 700;
+      color: #92400E;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 3px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .pillar-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 20px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pillar-header {
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 8px;
+    }
+
+    .pillar-num {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--wine);
+    }
+
+    .pillar-header h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.25;
+      margin-top: 2px;
+    }
+
+    .item {
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .item-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 15.5px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .item p {
+      font-size: 13.5px;
+      color: var(--text);
+    }
+
+    .checklist-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--navy);
+      padding: 22px 26px;
+    }
+
+    .checklist-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--navy);
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 22px;
+      font-size: 13.5px;
+      list-style: none;
+    }
+
+    .checklist-grid li {
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .checklist-grid li::before {
+      content: "▪";
+      color: var(--wine);
+      font-weight: 700;
+      position: absolute;
+      left: 4px;
+    }
+
+    .footer-meta {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 780px) {
+      .grid, .checklist-grid {
+        grid-template-columns: 1fr;
+      }
+      .masthead h1 {
+        font-size: 24px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #FFFFFF;
+        padding: 0;
+      }
+      .pillar-card, .hero, .checklist-card, .masthead {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="masthead">
+      <div class="masthead-top">
+        <span>Edição Diária • 17 de Novembro de 2026</span>
+        <span>Fontes: RFB • DOU • MTE • Congresso • STF/TST • CONFAZ</span>
+      </div>
+      <h1>RADAR TRIBUTÁRIO, FISCAL E TRABALHISTA</h1>
+      <p class="masthead-sub">Monitoramento regulatório executivo para indústria, comércio, serviços e pessoa física.</p>
+    </header>
+
+    <div class="deadlines-bar">
+      <span class="deadlines-label">Prazos Próximos</span>
+      <span class="deadline-item"><strong>19/11:</strong> Folha/INSS, CPRB, IRRF e Simples Doméstico</span>
+      <span class="deadline-item"><strong>20/11:</strong> DIRBI</span>
+      <span class="deadline-item"><strong>23/11:</strong> PGDAS-D (Simples)</span>
+      <span class="deadline-item"><strong>30/11:</strong> DCTFWeb, IRPJ/CSLL, Carnê-Leão e DeCripto</span>
+    </div>
+
+    <section class="hero">
+      <div class="hero-kicker">
+        <span>Manchete Principal</span>
+        <span class="badge badge-vigor">[EM VIGOR]</span>
+      </div>
+      <h2>Portaria RFB nº 745/2026 institui transparência ativa de benefícios fiscais por CNPJ</h2>
+      <p>Publicada em edição extra do DOU e repercutida nesta semana, a <strong>Portaria RFB nº 745/2026</strong> regulamenta a divulgação pública detalhada por CNPJ (razão social, CNAE, valores e períodos) de incentivos, renúncias e regimes especiais como REIDI, REPES, PADIS, PERSE e PAT, cobrindo dados desde 2015 com base nas declarações da <strong>DIRBI</strong> e governança de subcomissão executiva.</p>
+      <div class="impact-box">
+        <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+        Qualquer erro na <strong>DIRBI</strong> (cujo próximo vencimento é <strong>20/11</strong>) ficará exposto em painel público por CNPJ. Empresas com benefícios fiscais precisam conciliar apuração e DIRBI antes do envio para evitar exposição de inconsistências e malha fiscal.
+      </div>
+    </section>
+
+    <div class="grid">
+      <!-- Pilar 1 -->
+      <article class="pillar-card">
+        <div class="pillar-header">
+          <div class="pillar-num">Pilar 1</div>
+          <h3>Tributos sobre Produtos, Serviços e Empresas</h3>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Reforma Tributária: Apuração Assistida e Calculadora Aberta (Portaria Cotec nº 342) <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Em audiência no Senado em 17/11, a Receita Federal detalhou a liberação gradual da <strong>apuração assistida</strong> (declaração pré-preenchida para empresas) e disponibilizou no GitHub o código-fonte da Calculadora de Tributos da CBS.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Equipes de TI e fiscal já podem incorporar a lógica oficial da CBS nos ERPs, reduzindo divergências de cálculo e risco de glosa de créditos na virada da transição.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">CONFAZ / ICMS-ST: Revisão de protocolos interestaduais <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Sem novos protocolos nacionais publicados em 17/11/2026; segue em curso a adaptação aos pacotes recentes do CONFAZ (Despacho nº 43/2026 — Protocolos ICMS nº 90 a 123/2026), com revogação de acordos de ST envolvendo São Paulo e ajustes de bebidas em Alagoas.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Indústrias e distribuidoras devem revisar o cadastro de NCM/CEST no faturamento interestadual para não reter ICMS-ST indevidamente em protocolos já revogados.
+          </div>
+        </div>
+      </article>
+
+      <!-- Pilar 2 -->
+      <article class="pillar-card">
+        <div class="pillar-header">
+          <div class="pillar-num">Pilar 2</div>
+          <h3>Obrigações Acessórias &amp; Receita Federal</h3>
+        </div>
+
+        <div class="item">
+          <div class="item-title">DIRBI em foco até 20/11 e atos ordinários do DOU de 17/11 <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>O DOU de 17/11 trouxe atos rotineiros de habilitação OEA e despachantes. No calendário da semana, a entrega da <strong>DIRBI</strong> vence em <strong>20/11</strong> e alimenta diretamente a nova base pública da Portaria RFB nº 745/2026.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Cruze os valores de incentivos declarados na DIRBI com os registros da EFD-Contribuições e ECF antes de 20/11 para evitar multas percentuais sobre a receita bruta.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Vencimentos imediatos da Agenda Tributária <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Nesta quinta-feira (<strong>19/11</strong>) vencem INSS sobre a folha, CPRB, IRRF mensal e Simples Doméstico; em <strong>23/11</strong> vence o PGDAS-D do Simples Nacional.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Programe o fluxo de caixa de curto prazo para os DARFs previdenciários e retenções de 19/11, evitando encargos moratórios e bloqueio de CND.
+          </div>
+        </div>
+      </article>
+
+      <!-- Pilar 3 -->
+      <article class="pillar-card">
+        <div class="pillar-header">
+          <div class="pillar-num">Pilar 3</div>
+          <h3>Normas Trabalhistas (CLT) &amp; Previdenciárias</h3>
+        </div>
+
+        <div class="item">
+          <div class="item-title">STF: Pedido de destaque leva jornada (EC nº 141/2026) ao plenário presencial <span class="badge badge-judicial">[DECISÃO JUDICIAL]</span></div>
+          <p>O Ministro Luiz Fux pediu destaque nas ADIs 8.041 e 8.042, levando ao plenário presencial o julgamento sobre a transição da nova jornada (fim da escala 6x1), cuja primeira fase está prevista para <strong>16/12/2026</strong>.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            A mudança de plenário traz incerteza sobre eventuais ajustes de prazo antes de 16/12, mas o RH deve manter os cenários de escala prontos para evitar passivo de horas extras.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">MTE: Nota Orientativa FGTS Digital nº 12/2026 e cruzamento CSJT/eSocial <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>A SIT publicou diretrizes sobre FGTS em processos trabalhistas (incluindo CCP/Ninter) via evento <strong>S-2500</strong>, alertando que pagamento direto ao empregado não quita o FGTS. Em paralelo, acordo MTE/CSJT amplia acesso da Justiça do Trabalho ao eSocial, Caged e FGTS Digital.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Qualquer divergência entre folha, eSocial e ações trabalhistas será cruzada automaticamente pelos tribunais; revise acordos judiciais e guias no FGTS Digital.
+          </div>
+        </div>
+      </article>
+
+      <!-- Pilar 4 -->
+      <article class="pillar-card">
+        <div class="pillar-header">
+          <div class="pillar-num">Pilar 4</div>
+          <h3>Imposto de Renda &amp; Tributação da Pessoa Física</h3>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Congresso: Propostas de tributação progressiva de lucros e dividendos <span class="badge badge-pl">[PROJETO DE LEI]</span></div>
+          <p>Movimentações parlamentares registradas em 17/11/2026 propõem alíquotas progressivas sobre lucros e dividendos distribuídos a pessoas físicas, com teto sugerido de até 25% para altas rendas (em discussão legislativa, sem vigência imediata).</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Embora ainda seja proposta em tramitação, sócios de empresas no Lucro Presumido ou Real devem acompanhar a pauta antes de definir políticas de distribuição de resultados para 2027.
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Agenda PF: Quotas do IRPF e obrigações de 30/11 <span class="badge badge-vigor">[EM VIGOR]</span></div>
+          <p>Sem alterações na tabela do IRPF nas últimas 24h. Seguem programados para <strong>30/11</strong> os vencimentos de quotas do IRPF, Carnê-Leão, Ganho de Capital e declarações DeCripto, DME e DOI.</p>
+          <div class="impact-box">
+            <div class="impact-box-title">Impacto Prático no Caixa e Operação</div>
+            Mantenha a conciliação de rendimentos do exterior, aluguéis e criptoativos em dia para evitar multa diária e retenção em malha fina.
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="checklist-card">
+      <h3>Checklist do Contador &amp; RH — Ações para Hoje (17/11/2026)</h3>
+      <ul class="checklist-grid">
+        <li>Auditar benefícios fiscais (PERSE, REIDI, PAT etc.) antes de transmitir a <strong>DIRBI</strong> (prazo <strong>20/11</strong>), considerando a publicidade da Portaria RFB nº 745/2026.</li>
+        <li>Preparar o caixa e conferir guias de <strong>INSS/Folha, CPRB, IRRF e Simples Doméstico</strong> com vencimento em <strong>19/11</strong>.</li>
+        <li>Encaminhar à equipe de TI/ERP o repositório oficial da Calculadora da CBS (Portaria Cotec nº 342) para homologação.</li>
+        <li>Conferir protocolos de <strong>ICMS-ST</strong> revogados envolvendo SP e outros estados para evitar retenção indevida em notas interestaduais.</li>
+        <li>Validar acordos trabalhistas recentes à luz da <strong>Nota Orientativa FGTS Digital nº 12/2026</strong> e do evento <strong>S-2500</strong> no eSocial.</li>
+        <li>Acompanhar o julgamento presencial das ADIs da <strong>EC nº 141/2026</strong> no STF mantendo planos de contingência para 16/12/2026.</li>
+      </ul>
+    </section>
+
+    <p class="footer-meta">RADAR TRIBUTÁRIO, FISCAL E TRABALHISTA • Edição 17/11/2026 • Documento informativo — valide a aplicação específica com sua contabilidade.</p>
+  </div>
+</body>
+</html>
